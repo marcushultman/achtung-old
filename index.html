@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Actung, Die Kurve</title>
+  <!-- <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint"> -->
+
+  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+  <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+  <script src="app.js"></script>
+
+</head>
+<body onload="init()">
+<p>
+  <span id="status"></span>
+  <span id="error" style="color: red;"></span>
+</p>
+<a id="link" data-action="share"></a>
+
+<style type="text/css">
+  button {
+    height: 60px;
+    width: 120px;
+  }
+</style>
+<button onclick="pO(this, 'top')" style="width:100%;">Top</button><br>
+<button onclick="pO(this, 'left')">Left</button>
+
+<!-- TODO: debug log messages -->
+<div id="log"></div>
+<button onclick="ping()">Ping</button>
+
+<button onclick="pO(this, 'right')" style="float:right;">Right</button><br>
+<button onclick="pO(this, 'bottom')" style="width:100%;">Bottom</button><br><br>
+
+
+
+<!-- <select id="in">
+  <option>top</option>
+  <option>left</option>
+  <option>right</option>
+  <option>bottom</option>
+</select>
+<button onclick="pI(this, document.getElementById('in').value)">Pair</button> -->
+
+</body>
+</html>
