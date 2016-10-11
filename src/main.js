@@ -1,9 +1,13 @@
-import Dispatcher from './dispatcher'
+'use strict';
 
-let dispatcher = new Dispatcher()
-let subscriber = (message) => {
-  console.log(message)
+export class Point {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
 }
 
-dispatcher.subscribe(subscriber)
-dispatcher.publish('Hello, World!')
+if (require.main === module) {
+    let pt = new Point(7,4);
+    console.log(`My point: ${JSON.stringify(pt)}`);
+}
