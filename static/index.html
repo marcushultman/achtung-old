@@ -1,28 +1,43 @@
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Achtung!</title>
 
     <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/css/ratchet.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"/>
     <style type="text/css">
     body, html {
       margin: 0;
-    }
-    #button_view {
-      background: url(http://i.stack.imgur.com/yZlqh.png);
-      background-size: 100% 100%;
       width: 100%;
       height: 100%;
+      font-family: 'Open Sans';
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .page {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    #log {
+      position: absolute;
+      width: 100%;
     }
     </style>
   </head>
   <body>
     <script src="app.js" type="text/javascript"></script>
-    <div id="button_view">
-      <a id="id"></a><br>
-      <button id="ping">PING</button><br>
-      <div id="log"></dir>
-    </div>
+    <div id="view" class="page"/></div>
+
+    <div id="log"></div>
   </body>
 </html>

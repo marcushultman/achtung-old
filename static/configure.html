@@ -1,0 +1,47 @@
+<style>
+.page {
+  background: url(http://i.stack.imgur.com/yZlqh.png);
+  background-size: 100% 100%;
+}
+.button-pane {
+  position: absolute;
+}
+.button-pane#top,
+.button-pane#bottom {
+  width: 100%;
+  height: 50%;
+}
+.button-pane#left,
+.button-pane#right {
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+.button-pane#top { top: 0 }
+.button-pane#left { left: 0 }
+.button-pane#right { right: 0 }
+.button-pane#bottom { bottom: 0 }
+.start-button {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: lightblue;
+  box-shadow: 0 0 10px gray;
+}
+.start-button a {
+  display: block;
+  padding-top: 35%;
+  width: 100%;
+  text-align: center;
+}
+</style>
+<div class="page">
+  <div class="button-pane" id="left"></div>
+  <div class="button-pane" id="right"></div>
+  <div class="button-pane" id="top"></div>
+  <div class="button-pane" id="bottom"></div>
+  <div class="start-button" id="start"><a>START</a></div>
+</div>

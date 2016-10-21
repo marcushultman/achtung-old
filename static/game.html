@@ -1,0 +1,67 @@
+<style>
+.page {
+  background: #333;
+}
+.page > * {
+  position: absolute;
+  width: 100%;
+}
+.page > h2 {
+  margin-top: 12px;
+  text-align: center;
+}
+.game-menu {
+  top: 35%;
+}
+.game-menu > * {
+  display: table;
+  margin: 0 auto;
+}
+.game-menu .btn {
+  float: left;
+  width: 120px;
+  background: rgba(255,255,255,.6);
+  margin-left: 12px;
+}
+.game-menu .btn:first-child {
+  margin-left: 0;
+}
+.game-pad {
+  bottom: 0;
+}
+.game-pad > * {
+  display: table;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.1);
+  border-radius: 25px 25px 0 0;
+}
+.game-pad .icon {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 6px 12px 4px 12px;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  background-color: rgba(255,255,255,.6);
+  border-radius: 25px;
+}.game-pad .icon:first-child {
+  /*margin-left: 0;*/
+}
+</style>
+<div class="page">
+  <canvas id="canvas"></canvas>
+  <h2 id="score"></h2>
+  <div class="game-menu" id="menu">
+    <div>
+      <button class="btn btn-block" id="replay">Replay</button>
+      <button class="btn btn-block" id="configure">Configure</button>
+    </div>
+  </div>
+  <div class="game-pad">
+    <div>
+      <span class="icon icon-left-nav" id="left"></span>
+      <span class="icon icon-right-nav" id="right"></span>
+    </div>
+  </div>
+</div>
