@@ -36,7 +36,8 @@ func main() {
     })
     so.On("peer_data", func(id string, msg string) {
       // if id not in connection return
-      connections[id].Emit(so.Id() + "data", msg)
+      log.Println("data", id, msg);
+      // connections[id].Emit(so.Id() + "data", msg)
     })
     disconnection := func(id string) {
       delete(connections, id)
